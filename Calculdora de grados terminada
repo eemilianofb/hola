@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <iostream>
+
+//calculadora de grados
+// fahrenheit = (9/5.0) * celsius + 32
+// celsius = (fahrenheit - 32) * (5/9)
+
+//printf ("celsius %d \n", celsius = (fahrenheit - 32) * (5/9)
+
+using namespace std;
+
+int main() {
+    double celsius, fahrenheit;
+    char opcion;
+
+    cout << "Seleccione la conversion que desea realizar:" << endl;
+    cout << "a) \033[32mCelsius\033[0m a \033[36mFahrenheit\033[0m" << endl;
+    cout << "b) \033[36mFahrenheit\033[0m a \033[32mCelsius\033[0m" << endl;
+    cout << "Opcion: ";
+    cin >> opcion;
+
+    if (opcion == 'a' || opcion == 'A') {
+        cout << "Introduzca el numero de grados \033[32mcelsius\033[0m para convertir a \033[36mfahrenheit\033[0m : ";
+        cin >> celsius;
+
+        fahrenheit = (9.0 / 5.0) * celsius + 32; 
+
+        cout << "\n"<< celsius << " convertidos dan " << fahrenheit << "° F." << endl; 
+        cout << "\n"<< fahrenheit << " convertidos dan " << celsius << "° C." << endl; 
+    
+	} else if (opcion == 'b' || opcion == 'B') {
+        cout << "Introduzca el numero de grados \033[36m fahrenheit\033[0m para convertir a \033[32mcelsius\033[0m: ";
+        cin >> fahrenheit;
+
+        celsius = (fahrenheit - 32.0) * (5.0 / 9.0);
+        cout << "\n"<< fahrenheit << "° F convertidos dan " << celsius << "° C." << endl;
+        cout << "\n"<< celsius << " convertidos dan " << fahrenheit << "° F." << endl; 
+    
+	} else {
+        cout << "Opcion no valida." << endl;
+    }
+
+    return 0;
+    
+}
