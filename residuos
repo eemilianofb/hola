@@ -1,0 +1,19 @@
+int main(){
+	
+	int a ,b, res, r;
+	float c,d;
+	
+	c =8;
+	d =3;
+	a=8;
+	b=3;
+	res = 0;
+	r =0;
+	
+	r = c/d;
+	res = a*b;
+	
+	printf("el resultado de la division es %f y su residuo es %d", r, res);
+	
+	return 0;
+}
