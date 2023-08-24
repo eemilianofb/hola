@@ -1,0 +1,31 @@
+//expresiones numericas
+
+/*int main(){
+	int a ,b,x ;
+	float c,d;
+	
+a= 5;
+b= 6;
+
+c=4.6;
+d=9.2;
+
+x= a+b;
+
+prinf("%f")
+
+return 0;
+	
+}*/
+
+/*
+int main(){
+	
+	int a=5, b=5, sumaValores, restaValores;
+	float c=4.6, d=9.2,mul
+
+	
+	
+	
+}*/
+
