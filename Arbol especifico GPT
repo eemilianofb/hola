@@ -1,0 +1,52 @@
+
+int main() {
+    int n;
+    
+    printf("Dame un número del 1 al 25: ");
+    scanf("%d", &n);
+    
+    if (n >= 1 && n <= 25) {
+        // Imprimir el árbol con n pisos
+        int espacios = n - 1;
+        int asteriscos = 1;
+        
+        for (int i = 0; i < n; i++) {
+            // Imprimir espacios
+            for (int j = 0; j < espacios; j++) {
+                printf(" ");
+            }
+            
+            // Imprimir asteriscos
+            for (int j = 0; j < asteriscos; j++) {
+                printf("*");
+            }
+            
+            // Avanzar al siguiente piso
+            printf("\n");
+            espacios--;
+            asteriscos += 2;
+        }
+        
+        // Imprimir el tronco
+        int troncoAltura = n / 3; // Aproximadamente 1/3 de la altura
+        int troncoAncho = n / 5;  // Aproximadamente 1/5 del ancho
+        
+        for (int i = 0; i < troncoAltura; i++) {
+            // Imprimir espacios para centrar el tronco
+            for (int j = 0; j < (n - troncoAncho) / 2; j++) {
+                printf(" ");
+            }
+            
+            // Imprimir el tronco
+            for (int j = 0; j < troncoAncho; j++) {
+                printf("|");
+            }
+            
+            printf("\n");
+        }
+    } else {
+        printf("Número fuera del rango válido.\n");
+    }
+    
+    return 0;
+}
