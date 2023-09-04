@@ -7,13 +7,35 @@
 int main(){
 	int (n);
 	
-	printf("Introduzca el \033[32mnumero\033[0m de pisos de arbol deseado \n");
+	printf("Introduzca el \033[32mnumero\033[0m de pisos de arbol deseado: \n");
 	
 	scanf("%d",&n);
 
-if (n)
-	
-	printf("");
-	
+//plantas del arbol
+if (n>=1 && n<=25)
+{
+int espaciosDentroDelArbol = n - e;
+int AsteriscosPlantas = 2 * e1;
+
+printf("hola \n");
+}
+
+//Cantidad de espacios y asteriscos
+
+for (int i = 0; e < n; e++) {
+            // Imprimir espacios
+            for (int j = 0; j < espaciosDentroDelArbol; j++) {
+                printf(" ");
+            }
+            
+            // Imprimir asteriscos
+            for (int j = 0; j < AsteriscosPlantas; j++) {
+                printf("*");
+            }
+
+//Numero superior del 1 al 25
+    else {
+        printf("Bro no te pases, te dije del 1 al 25 mamon.\n");
+    }
 	return 0;
 }
