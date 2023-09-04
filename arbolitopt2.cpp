@@ -1,4 +1,5 @@
-//arbolito
+// Árbol del 1 al 100 y depende el numero que de sera la cantidad de pisos del arbol, que nos pregunte
+
 
 #include <stdio.h>
 
@@ -32,6 +33,23 @@ int main ()
 	 		printf("//              \\\\ \n");
      		printf("     ________     \n");
 	 		printf("        ||     \n");
+		}
+		else 
+		{
+		if(n>= 8 && n<=10)
+		        printf("           +   \n");
+    		    printf("         //  \\\\ \n");
+     		    printf("        //    \\\\ \n");
+	 		    printf("       //      \\\\ \n");
+	 		    printf("      //        \\\\ \n");
+	 		    printf("     //          \\\\ \n");
+	 		    printf("    //            \\\\ \n");
+	 	    	printf("   //              \\\\ \n");
+	 	    	printf("  //                \\\\ \n");
+	 	    	printf(" //                  \\\\ \n");
+	 	    	printf("//                    \\\\ \n");
+     	     	printf("        ________     \n");
+	 	     	printf("           ||     \n");
 		}
 	}
 
