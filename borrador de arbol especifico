@@ -1,0 +1,19 @@
+//Árbol del 1 al 25 y depende el numero que de sera la cantidad de pisos del arbol, que nos pregunte
+
+//	if (n>=1 && n<=25)
+
+#include <stdio.h>
+
+int main(){
+	int (n);
+	
+	printf("Introduzca el \033[32mnumero\033[0m de pisos de arbol deseado \n");
+	
+	scanf("%d",&n);
+
+if (n)
+	
+	printf("");
+	
+	return 0;
+}
