@@ -1,0 +1,42 @@
+//Árbol del 1 al 25 y depende el numero que de sera la cantidad de pisos del arbol, que nos pregunte
+
+//	if (n>=1 && n<=25)
+#include <stdio.h>
+
+int main() {
+    int n;
+    char respuesta = 'S';
+    
+    while (respuesta == 'S' || respuesta == 's') {
+        printf("Introduzca un \033[32mnumero\033[0m del 1 al 25 para que sean los pisos del arbol: \n");
+        scanf("%d", &n);
+
+        // Verificar rango
+        if (n >= 1 && n <= 25) {
+            for (int e = 1; e <= n; e++) {
+                int espaciosDentroDelArbol = n - e;
+                int AsteriscosPlantas = 2 * e - 1;
+
+                // Imprimir espacios
+                for (int j = 0; j < espaciosDentroDelArbol; j++) {
+                    printf(" ");
+                }
+
+                // Imprimir asteriscos
+                for (int j = 0; j < AsteriscosPlantas; j++) {
+                    printf("*");
+                }
+                printf("\n");
+            }
+
+            // Preguntar si deseas hacer otro árbol
+            printf("Deseas hacer otro Arbol? (S/N): \n\n ");
+            scanf(" %c", &respuesta);
+            
+        } else {
+            printf("Bro no te pases, te dije del 1 al 25.\n\n");
+        }
+    }
+
+    return 0;
+}
