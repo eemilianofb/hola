@@ -1,0 +1,150 @@
+#include <stdio.h>
+
+//suma de dos arreglos de numeros
+
+int main(){
+	
+int Grupo1n1;
+int Grupo1n2;
+int Grupo1n3;
+int Grupo1n4;
+int Grupo1n5;
+
+int Grupo2n1;
+int Grupo2n2;
+int Grupo2n3;
+int Grupo2n4;
+int Grupo2n5;
+
+int respuestaNumerica;
+
+//Grupo 1
+	
+	printf("Dame el primer numero del primer grupo de numeros:\n");
+	scanf("%d",&Grupo1n1);
+	
+	printf("Dame el segundo numero del primer grupo de numeros:\n");
+	scanf("%d",&Grupo1n2);
+	
+	printf("Dame el tercer numero del primer grupo de numeros:\n");
+	scanf("%d",&Grupo1n3);
+	
+	printf("Dame el cuarto numero del primer grupo de numeros:\n");
+	scanf("%d",&Grupo1n4);
+	
+	printf("Dame el quinto numero del primer grupo de numeros:\n");
+	scanf("%d",&Grupo1n5);
+	
+	printf("\n\n");
+	
+//Grupo2
+
+ 	printf("Dame el primer numero del segundo grupo de numeros:\n");
+	scanf("%d",&Grupo2n1);
+	
+	printf("Dame el segundo numero del segundo grupo de numeros:\n");
+	scanf("%d",&Grupo2n2);
+	
+	printf("Dame el tercer numero del segundo grupo de numeros:\n");
+	scanf("%d",&Grupo2n3);
+	
+	printf("Dame el cuarto numero del segundo grupo de numeros:\n");
+	scanf("%d",&Grupo2n4);
+	
+	printf("Dame el quinto numero del segundo grupo de numeros:\n");
+	scanf("%d",&Grupo2n5);
+	
+	printf("\n\n");
+	
+	printf("Que tipo de operacion matematicas quieres usar?\n");
+	printf("1 para + \n");
+	printf("2 para / \n");
+	printf("3 para * \n");
+	printf("4 para - \n");
+	scanf("%d \n",respuestaNumerica);
+	
+//grupoSuma
+
+	int Suma1 = Grupo1n1 + Grupo2n1; 
+	int Suma2 = Grupo1n2 + Grupo2n2;
+	int Suma3 = Grupo1n3 + Grupo2n3;
+	int Suma4 = Grupo1n4 + Grupo2n4;
+	int Suma5 = Grupo1n5 + Grupo2n5;
+	
+//grupoDivision
+
+	int Division1 = Grupo1n1 / Grupo2n1; 
+	int Division2 = Grupo1n2 / Grupo2n2;
+	int Division3 = Grupo1n3 / Grupo2n3;
+	int Division4 = Grupo1n4 / Grupo2n4;
+	int Division5 = Grupo1n5 / Grupo2n5;
+
+//grupoMult
+
+	int Mult1 = Grupo1n1 * Grupo2n1; 
+	int Mult2 = Grupo1n2 * Grupo2n2;
+	int Mult3 = Grupo1n3 * Grupo2n3;
+	int Mult4 = Grupo1n4 * Grupo2n4;
+	int Mult5 = Grupo1n5 * Grupo2n5;
+	
+//grupoResta
+
+	int Resta1 = Grupo1n1 - Grupo2n1; 
+	int Resta2 = Grupo1n2 - Grupo2n2;
+	int Resta3 = Grupo1n3 - Grupo2n3;
+	int Resta4 = Grupo1n4 - Grupo2n4;
+	int Resta5 = Grupo1n5 - Grupo2n5;
+	
+//PART SWITCH
+
+int resultado1;
+int resultado2;
+int resultado3;
+int resultado4;
+int resultado5;
+
+switch (respuestaNumerica) {
+        
+		case 1: // Suma
+    resultado1 = Grupo1n1 + Grupo2n1;
+    resultado2 = Grupo1n2 + Grupo2n2;
+    resultado3 = Grupo1n3 + Grupo2n3;
+    resultado4 = Grupo1n4 + Grupo2n4;
+    resultado5 = Grupo1n5 + Grupo2n5;
+    	break;
+        
+		case 2: // División
+    resultado1 = Grupo1n1 / Grupo2n1;
+    resultado2 = Grupo1n2 / Grupo2n2;
+    resultado3 = Grupo1n3 / Grupo2n3;
+    resultado4 = Grupo1n4 / Grupo2n4;
+    resultado5 = Grupo1n5 / Grupo2n5;
+        break;
+            
+    	case 3: // Multiplicación
+    resultado1 = Grupo1n1 * Grupo2n1;
+    resultado2 = Grupo1n2 * Grupo2n2;
+    resultado3 = Grupo1n3 * Grupo2n3;
+    resultado4 = Grupo1n4 * Grupo2n4;
+    resultado5 = Grupo1n5 * Grupo2n5;
+        break;
+        
+   		case 4: // Resta
+    resultado1 = Grupo1n1 - Grupo2n1;
+    resultado2 = Grupo1n2 - Grupo2n2;
+    resultado3 = Grupo1n3 - Grupo2n3;
+    resultado4 = Grupo1n4 - Grupo2n4;
+    resultado5 = Grupo1n5 - Grupo2n5;
+        break;
+    }
+        
+//resultados
+ 	printf("Resultado 1: %d\n", resultado1);
+    printf("Resultado 2: %d\n", resultado2);
+    printf("Resultado 3: %d\n", resultado3);
+    printf("Resultado 4: %d\n", resultado4);
+    printf("Resultado 5: %d\n", resultado5);
+	
+	return 0;
+}
+
