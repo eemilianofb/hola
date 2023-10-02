@@ -1,0 +1,31 @@
+// Igualdad de cadenas de texto
+
+#include<stdio.h>
+#include <string.h>
+
+int main(){
+	char texto1[10];
+	char texto2[10];
+
+	printf("Este es un programa que detecta si un texto es igual al otro \n");
+	
+	printf("Escribe tu primer texto:  \n");
+	scanf("%s",texto1);
+	
+	printf("Escribe tu segundo texto:  \n");
+	scanf("%s",texto2);
+	
+	printf("Cadena de texto 1: %s \n",texto1);
+	printf("Cadena de texto 2: %s \n",texto2);
+	
+	
+//Comparar	
+
+	if (strcmp(texto1, texto2) == 0) {
+        printf("Los textos - si - son iguales\n");
+    } else {
+        printf("Los textos - no - son iguales\n");
+    }
+
+    return 0;
+}
