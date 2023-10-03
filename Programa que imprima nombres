@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdio.h>
+
+int main() {
+    char nombresA[7][20] = {
+        "\033[34mMessi\033[0m", 
+        "\033[34mRonaldo\033[0m", 
+        "\033[34mAntuna\033[0m", 
+        "\033[34mJimenez\033[0m", 
+        "\033[34mOchoa\033[0m", 
+        "\033[34mOzuna\033[0m", 
+        "\033[34mMora\033[0m"
+        
+    };
+
+    int eleccion;
+    printf("Cual es el \033[32mnumero\033[0m del \033[34mnombre\033[0m que quieres obtener?\n\n");
+
+    for (int n = 0; n < 7; n++) {
+        printf("Para %s, ingresa el \033[32mnumero\033[0m %d\n\n", nombresA[n], n);
+    }
+	printf("\n");
+    scanf("%d", &eleccion);
+
+    if (eleccion >= 1 && eleccion <= 7) {
+       
+	    printf("Aqui esta el \033[34mnombre\033[0m buscado: %s\n", nombresA[eleccion]);
+    
+	} else {
+        printf("Numero de seleccion invalido.\n");
+    }
+
+    return 0;
+}
