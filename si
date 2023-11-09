@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main (){
+	
+		FILE *archivo;
+	
+	archivo = fopen("emails.csv", "r");
+	
+	if(archivo == NULL) {
+		
+		perror("Error en la apertura del archivo");
+			return 1;
+	}
+	
+	fprintf(archivo, "este es un nuevo archivo. \n");
+	
+	fclose(archivo);
+}
